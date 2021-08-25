@@ -1,26 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TCW Chat Application</title>
-    <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+<title>Amit Sain</title>
 </head>
-
 <body>
-    <section class="chat__section">
-        <div class="brand">
-            <img height="100" src="/WaterMark.png" alt="">
-            <h1>The akkisain application (v0.2)..</h1>
-        </div>
-        <div class="message__area"></div>
-        <div>
-            <textarea id="textarea" cols="50" rows="1" placeholder="Type here..."></textarea>
-        </div>
-    </section>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/client.js"></script>
-</body>
 
-</html>
+<h2 style="text-align:center">User Profile Card-latest</h2>
+
+<div class="card">
+  <img src="https://scontent.fjai2-2.fna.fbcdn.net/v/t1.18169-9/14463159_1094734910634098_707769203845431291_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=174925&_nc_ohc=jdezjh7kppUAX9WJk7r&_nc_ht=scontent.fjai2-2.fna&oh=b184a130ce9f893c943e84e6187e8391&oe=60FD1576" alt="Amit" style="width:100%">
+  <h1>Amit Sain</h1>
+  <p class="title">Devops Engineer</p>
+  <p>Rajasthan</p>
+  <div style="margin: 24px 0;">
+    <a href="https://www.linkedin.com/in/amit-sain/" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/P.AkkiSain" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.youtube.com/channel/UC2XTlpN8KFvxpWxHDhzftyg" target="_blank"><i class="fa fa-youtube"></i></a>
+    <a href="skype:technical_1311?chat" target="_blank"><i class="fa fa-skype"></i></a>
+  </div>
+  <p><button>Contact</button></p>
+</div>
+
+</body>
